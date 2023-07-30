@@ -49,7 +49,7 @@ class App extends React.Component {
     // const filename = 'SQL.pdf'; // 你要下载的文件名
     const { imageURL, uploadedFileName } = this.state;
 
-    const filename = `${uploadedFileName.split('.')[0]}_processed.pdf`;
+    const filename = `${uploadedFileName.split('.')[0]}_result.zip`;
 
     // 使用Fetch API进行文件下载
     fetch(`http://localhost:4567/download/${filename}`)
