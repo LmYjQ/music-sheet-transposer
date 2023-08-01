@@ -82,14 +82,14 @@ class App extends React.Component {
       <form onSubmit={this.handleUploadImage}>
         <div>
           <input ref={(ref) => { this.uploadInput = ref; }} type="file" />
-        </div>
-        <div>
-          <input ref={(ref) => { this.fileName = ref; }} type="text" placeholder="Enter the desired name of file" />
-        </div>
-        <br />
-        <div>
           <button>Upload</button>
         </div>
+        {/* <div>
+          <input ref={(ref) => { this.fileName = ref; }} type="text" placeholder="Enter the desired name of file" />
+        </div> */}
+        <br />
+        {/* <div>
+        </div> */}
         <div>
           <button onClick={this.handleDownloadClick}>下载文件</button>
         </div>
